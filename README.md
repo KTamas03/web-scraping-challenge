@@ -58,10 +58,10 @@ Jupyter Notebook Python Script:
       1. How many months are there on Mars?
       2. How many Martian days' worth of data are there?
       3. What is the average low temperature by month?
-         a. Plot the average temperature by month
-         b. Identify the coldest and hottest months in Curiosity's location
+             a. Plot the average temperature by month
+             b. Identify the coldest and hottest months in Curiosity's location
       4. Average pressure by Martian month?
-         a. Plot the average pressure by month        
+             a. Plot the average pressure by month        
       5. How many terrestrial (earth) days are there in a Martian year?
    - Export the data to csv
    - Close the browser   
