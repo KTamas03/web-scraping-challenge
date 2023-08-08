@@ -5,14 +5,11 @@ This project involved the following:
 - 1: Scraping titles and preview text from Mars news articles.
 - 2: Scraping and analysing Mars weather data, which exists in a table.
 
-UPDATE Repository Folders and Contents:
-- SurfsUp:
-  - Resources:
-    - hawaii.sqlite
-    - hawaii_measurements.csv
-    - hawaii_stations.csv
-  - app.py
-  - climate_kt.ipynb
+Repository Contents:
+- part_1_mars_news_kt.ipynb
+- part_2_mars_weather_kt.ipynb
+- Output:
+    - Weather_Data.csv
     
 ## Table of Contents
 
@@ -23,44 +20,63 @@ UPDATE Repository Folders and Contents:
 - [Contributing](#contributing)
 
 ## About
-**Part 1: Scraping titles and preview text from Mars news articles**
+**Part 1: Scraping titles and preview text from Mars News articles**
 
-Python and SQLAlchemy are used to do a basic climate analysis and data exploration of the climate database. Specifically, SQLAlchemy ORM queries, Pandas, and Matplotlib.ct are used.
+Using Splinter and Beauiful Soup libraries in Jupyter Notebook to extract specific data from the Mars News website.
 
 Tools/Libraries Imported:
-- matplotlib.pyplot library: used for creating graphs and charts
-- matplotlib style 'fivethirtyeight': specific plot style with predefined colours, and fonts
-- numpy library: used for numerical computations
-- pandas library: used for data manipulation and analysis
-- datetime library: provides classes for manipulating dates and times
-
+- splinter library: used for automating web browser actions
+- bs4 library: Beautiful Soup, used for parsing websites and scraping specific data
 
 Jupyter Notebook Python Script:
-- File: climate_kt.ipynb
+- File: part_1_mars_news_kt.ipynb
 - Purpose:
-  - Use sqlalchemy to connect to the hawaii.sqlite database
-  - Reflect the tables from the database into classes and save references to them, named 'station' and 'measurement'
-  - link Python to the hawaii.sqlite database by creating a sqlalchemy session
-      
+  - Visit the Mars News Site
+  - Scrape the Website for all the text elements
+  - Store each title and preview pair in a Python dictionary
+  - Store all the dictionaries in a Python list
+  - Print the list
+
+**Part 2: Scraping and analysing Mars weather data, which exists in a table.**
+
+Using Splinter and Beauiful Soup libraries in Jupyter Notebook to extract specific data from the Mars Weather website. Analysis on the data is then performed using Pandas and Matplotlib libraries.
+
+Tools/Libraries Imported:
+- splinter library: used for automating web browser actions
+- bs4 library: Beautiful Soup, used for parsing websites and scraping specific data
+- matplotlib.plplot module: from the matplotlib library, used to create various plots
+- pandas library: for data manipulation and analysis
+
+Jupyter Notebook Python Script:
+- File: part_2_mars_weather_kt.ipynb
+- Purpose:
+  - Visit the Mars Weather Site
+  - Scrape weather data from the main table on the webpage
+  - Create a pandas dataframe from the data
+  - Convert the datatypes of each column to be suitable to perform analysis
+  - Analyse the following:
+      1. How many months are there on Mars?
+      2. How many Martian days' worth of data are there?
+      3. What is the average low temperature by month?
+         a. Plot the average temperature by month
+         b. Identify the coldest and hottest months in Curiosity's location
+      4. Average pressure by Martian month?
+         a. Plot the average pressure by month        
+      5. How many terrestrial (earth) days are there in a Martian year?
+   - Export the data to csv
+   - Close the browser   
+        
+
 ## Getting Started
-To open climate_kt.ipynb in Juypter Notebook:
+To open the files part_1_mars_news_kt.ipynb and part_2_mars_weather_kt.ipynb in Juypter Notebook:
   - Open Anaconda Prompt
   - Activate dev environment, type 'conda activate dev'
   - Navigate to the folder where repository is saved on local drive
   - Open Jupyter Notebook, type 'Jupyter Notebook'
-
-To open app.py and activate the flask API:
- - Open app.py in Visual Studio Code
- - Navigate to the folder location of the app.py file where it is saved on the local drive
- - In the Terminal type 'python app.py'
- - The url should be http://127.0.0.1:5000:
-      - open a webpage with the above url
-      - add the different routes to see the JSON output eg. http://127.0.0.1:5000/api/v1.0/precipitation
-      - to close the flask app in Visual Studio Code, press Ctrl + c
         
 ## Installing
 Need to install the following:
-  - Chromedriver
+  - Chromedriver (windows x64)
   - Selenium=Beautiful Soup and splinter = automates web browser: pip install "splinter[selenium4]"
   - Beautiful Soup = pip install bs4
   - to parse websites = pip install html5lib
