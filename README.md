@@ -50,21 +50,21 @@ Tools/Libraries Imported:
 Jupyter Notebook Python Script:
 - File: part_2_mars_weather_kt.ipynb
 - Purpose:
-1. Visit the Mars Weather Site
-2. Scrape weather data from the main table on the webpage
-3. Create a pandas dataframe from the data
-4. Convert the datatypes of each column for analysis
-5. Analyze the following:
-   - How many months are there on Mars?
-   - How many Martian days' worth of data are there?
-   - What is the average low temperature by month?
-   - Plot the average temperature by month
-   - Identify the coldest and hottest months in Curiosity's location
-   - Average pressure by Martian month?
-   - Plot the average pressure by month
-   - How many terrestrial (earth) days are there in a Martian year?
-6. Export the data to a CSV file
-7. Close the browser 
+    1. Visit the Mars Weather Site
+    2. Scrape weather data from the main table on the webpage
+    3. Create a pandas dataframe from the data
+    4. Convert the datatypes of each column for analysis
+    5. Analyze the following:
+        - How many months are there on Mars?
+        - How many Martian days' worth of data are there?
+        - What is the average low temperature by month?
+        - Plot the average temperature by month
+        - Identify the coldest and hottest months in Curiosity's location
+        - Average pressure by Martian month?
+        - Plot the average pressure by month
+        - How many terrestrial (earth) days are there in a Martian year?
+    6. Export the data to a CSV file
+    7. Close the browser 
         
 
 ## Getting Started
