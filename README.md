@@ -9,7 +9,7 @@ Repository Contents:
 - part_1_mars_news_kt.ipynb
 - part_2_mars_weather_kt.ipynb
 - Output:
-    - Weather_Data.csv
+    - scraped_data_kt.json
     
 ## Table of Contents
 
@@ -27,6 +27,8 @@ Using Splinter and Beauiful Soup libraries in Jupyter Notebook to extract specif
 Tools/Libraries Imported:
 - splinter library: used for automating web browser actions
 - bs4 library: Beautiful Soup, used for parsing websites and scraping specific data
+- json libray: to save the exported data in json format
+- pathlib library: to create a file path to export the json file to
 
 Jupyter Notebook Python Script:
 - File: part_1_mars_news_kt.ipynb
@@ -36,6 +38,7 @@ Jupyter Notebook Python Script:
   - Store each title and preview pair in a Python dictionary
   - Store all the dictionaries in a Python list
   - Print the list
+  - Export the python list to in a json file (Output/scraped_data_kt.json)
 
 **Part 2: Scraping and analysing Mars weather data, which exists in a table.**
 
