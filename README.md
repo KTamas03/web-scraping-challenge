@@ -54,8 +54,8 @@ Tools/Libraries I Imported:
 - pandas library: for data manipulation and analysis
 
 My Files:
-    - Jupyter Notebook Python Script: part_2_mars_weather_kt.ipynb
-    - csv file: Output/mars_temperature_data.csv       
+- Jupyter Notebook Python Script: part_2_mars_weather_kt.ipynb
+- csv file: Output/mars_temperature_data.csv       
 
 ## Getting Started
 To open the files part_1_mars_news_kt.ipynb and part_2_mars_weather_kt.ipynb in Juypter Notebook:
