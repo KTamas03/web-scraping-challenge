@@ -39,8 +39,8 @@ Tools/Libraries I Imported:
 - pathlib library: to create a file path to export the json file to
 
 My Files:
-    - Jupyter Notebook Python Script: part_1_mars_news_kt.ipynb
-    - JSON file: Output/scraped_data_kt.json)
+- Jupyter Notebook Python Script: part_1_mars_news_kt.ipynb
+- JSON file: Output/scraped_data_kt.json)
 
 **Part 2: Scraping and analysing Mars weather data, which exist in a table.**
 
