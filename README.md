@@ -1,9 +1,9 @@
 # web-scraping-challenge
 Module 11 Challenge - Data Collection
 
-In this project, I performed web scraping from two websites, Mars News and Mars Weather:
-    - From the Mars News website, I scraped information from a list of news articles.
-    - From the Mars Weather website, I scraped weather information from a table. Then I performed some analysis on the scraped table data.
+In this project, I performed web scraping from two websites:
+    - Mars News (https://static.bc-edx.com/data/web/mars_facts/temperaturehttps://static.bc-edx.com/data/web/mars_news/index.html.html): I scraped information from a list of news articles.
+    - Mars Weather (https://static.bc-edx.com/data/web/mars_facts/temperature.html): I scraped weather information from a table. Then I performed some analysis on the scraped table data.
 
 Repository Contents:
 - part_1_mars_news_kt.ipynb
