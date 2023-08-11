@@ -22,8 +22,6 @@ Repository Contents:
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Installing](#installing)
-- [Usage](#usage)
-- [Contributing](#contributing)
 
 ## About
 **Part 1: Scraping titles and preview text from Mars News articles**
@@ -45,9 +43,9 @@ My Files:
 
 **Part 2: Scraping and analysing Mars weather data, which exist in a table.**
 
-I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract weather data from the Mars Weather website that was in a table.As done in Part 1 above, in order to identify the data to extract, I opened the website in my Chrome web brower, then selected the 'Developer Tools' (Ctrl+Shift+I). Upon inspecting the html code, I was able to identify the section of code corresponding to the data in the table on the page. I created an empty list which would then be filled with the data from the table, by looping through each row and column. Once I had the list of rows, and the list of column names, using the Pandas library, I formed a dataframe. 
+I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract weather data from the Mars Weather website that was in a table. As done in Part 1 above, in order to identify the data to extract, I opened the website in my Chrome web brower, then selected the 'Developer Tools' (Ctrl+Shift+I). Upon inspecting the html code, I was able to identify the section of code corresponding to the data in the table on the page. I created an empty list which would then be filled with the data from the table, by looping through each row and column. Once I had the list of rows, and the list of column names, using the Pandas library, I formed a dataframe. 
 
-Before I performed any analysis, I converted the datatypes of each column eg. from Object to integer or float, depending on the column data. I was then able to perform various types of analysis on the data using Pandas and Matplotlib libraries. Finally, I exported the dataframe to a csv file in an 'Output' folder and closed the browser.
+Before I performed any analysis, I converted the datatypes of each column eg. from Object to integer or float, depending on the column data. I was then able to perform various types of analysis using Pandas and Matplotlib libraries. Finally, I exported the dataframe to a csv file in an 'Output' folder and closed the browser.
 
 Tools/Libraries I Imported:
 - splinter library: used for automating web browser actions
@@ -67,15 +65,12 @@ To open the files part_1_mars_news_kt.ipynb and part_2_mars_weather_kt.ipynb in 
   - Open Jupyter Notebook, type 'Jupyter Notebook'
         
 ## Installing
-Need to install the following:
-  - Chromedriver (windows x64)
-  - Selenium = Beautiful Soup and splinter = automates web browser: pip install "splinter[selenium4]"
-  - Beautiful Soup = pip install bs4
-  - to parse websites = pip install html5lib
-  - to parse websites = pip install lxml
+I installed the following:
+  - Chromedriver (windows x64) (go to: https://googlechromelabs.github.io/chrome-for-testing/#stable, select a stable version of Chromedriver that is suitable for your pc. Unzip the files and make sure that the folder path containing the files is added to Environment Variables > Path on your pc.)
 
-## Usage
-A step by step series of examples that tell you how to get a development env running.
+Open 'Anaconda Prompt', activate dev environment (see Getting Started section above), then install the following:
+  - Splinter library with optional dependency Selenium to automate tasks on websites, type: pip install "splinter[selenium4]"
+  - Beautiful Soup library for web scraping, type: pip install bs4
+  - html5lib library to parse websites, type: pip install html5lib
 
-## Contributing
-Contributors names.
+
