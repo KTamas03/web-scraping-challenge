@@ -42,6 +42,7 @@ My Files:
 - Jupyter Notebook Python Script: part_1_mars_news_kt.ipynb
 - JSON file: Output/scraped_data_kt.json)
 
+
 **Part 2: Scraping and analysing Mars weather data, which exist in a table.**
 
 I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract weather data from the Mars Weather website that was in a table. I created an empty list which would then be filled with the data from the table, by looping through each row and column. Once I had the list of rows, and the list of column names, using the Pandas library, I formed a dataframe. 
