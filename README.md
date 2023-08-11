@@ -4,7 +4,7 @@ Module 11 Challenge - Data Collection
 In this project, the main challenge involved collecting data from websites by using web scraping. The two websites were:
     - Mars News:
     
-        - https://static.bc-edx.com/data/web/mars_facts/temperaturehttps://static.bc-edx.com/data/web/mars_news/index.html.html
+        - https://static.bc-edx.com/data/web/mars_facts/temperaturehttps://static.bc-edx.com/data/web/mars_news/index.html
         
         - I scraped information from a list of news articles
             
