@@ -1,15 +1,16 @@
 # web-scraping-challenge
 Module 11 Challenge - Data Collection
 
-This project involved the following:
-- 1: Scraping titles and preview text from Mars news articles.
-- 2: Scraping and analysing Mars weather data, which exists in a table.
+In this project, I performed web scraping from two websites, Mars News and Mars Weather:
+    - From the Mars News website, I scraped information from a list of news articles.
+    - From the Mars Weather website, I scraped weather information from a table. Then I performed some analysis on the scraped table data.
 
 Repository Contents:
 - part_1_mars_news_kt.ipynb
 - part_2_mars_weather_kt.ipynb
 - Output:
     - scraped_data_kt.json
+    - mars_temperature_data.csv
     
 ## Table of Contents
 
@@ -22,36 +23,36 @@ Repository Contents:
 ## About
 **Part 1: Scraping titles and preview text from Mars News articles**
 
-Using Splinter and Beauiful Soup libraries in Jupyter Notebook to extract specific data from the Mars News website.
+I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract text containing the title and preview of each article listed on the Mars News website. In order to identify which text to extract, I opened the website in my Chrome web brower, then selected the 'Developer Tools' (Ctrl+Shift+I). Upon inspecting the html code, I was able to identify the section of code corresponding to the title and preview pairs of each article listed on the page.
 
-Tools/Libraries Imported:
+Each title and preview pair were then stored in a python dictionary. Then I stored all of the dictionaries in a python list. Lastly, I exported the dictionary in a json format file in an 'Output' folder and closed the browser.
+
+Tools/Libraries I Imported:
 - splinter library: used for automating web browser actions
 - bs4 library: Beautiful Soup, used for parsing websites and scraping specific data
 - json libray: to save the exported data in json format
 - pathlib library: to create a file path to export the json file to
 
-Jupyter Notebook Python Script:
-- File: part_1_mars_news_kt.ipynb
-- Purpose:
-  - Visit the Mars News Site
-  - Scrape the Website for all the text elements
-  - Store each title and preview pair in a Python dictionary
-  - Store all the dictionaries in a Python list
-  - Print the list
-  - Export the python list to in a json file (Output/scraped_data_kt.json)
+My Files:
+    - Jupyter Notebook Python Script: part_1_mars_news_kt.ipynb
+    - JSON file: Output/scraped_data_kt.json)
 
-**Part 2: Scraping and analysing Mars weather data, which exists in a table.**
+**Part 2: Scraping and analysing Mars weather data, which exist in a table.**
 
-Using Splinter and Beauiful Soup libraries in Jupyter Notebook to extract specific data from the Mars Weather website. Analysis on the data is then performed using Pandas and Matplotlib libraries.
+I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract weather data from the Mars Weather website that was in a table. I created an empty list which would then be filled with the data from the table, by looping through each row and column. Once I had the list of rows, and the list of column names, using the Pandas library, I formed a dataframe. 
 
-Tools/Libraries Imported:
+Before I performed any analysis, I converted the datatypes of each column eg. from Object to integer or float, depending on the column data. I was then able to perform various types of analysis on the data using Pandas and Matplotlib libraries. Finally, I exported the dataframe to a csv file in an
+
+Tools/Libraries I Imported:
 - splinter library: used for automating web browser actions
 - bs4 library: Beautiful Soup, used for parsing websites and scraping specific data
 - matplotlib.plplot module: from the matplotlib library, used to create various plots
 - pandas library: for data manipulation and analysis
 
-Jupyter Notebook Python Script:
-- File: part_2_mars_weather_kt.ipynb
+My Files:
+    - Jupyter Notebook Python Script: part_2_mars_weather_kt.ipynb
+    - csv file: Output/mars_temperature_data.csv
+
 - Purpose:
     1. Visit the Mars Weather Site
     2. Scrape weather data from the main table on the webpage
