@@ -33,7 +33,7 @@ Each title and preview pair were then stored in a python dictionary. Then I stor
 Tools/Libraries I Imported:
 - splinter library: used for automating web browser actions
 - bs4 library: Beautiful Soup, used for parsing websites and scraping specific data
-- json libray: to save the exported data in json format
+- json library: to save the exported data in json format
 - pathlib library: to create a file path to export the json file to
 
 My Files:
