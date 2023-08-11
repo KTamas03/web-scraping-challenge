@@ -45,9 +45,9 @@ My Files:
 
 **Part 2: Scraping and analysing Mars weather data, which exist in a table.**
 
-I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract weather data from the Mars Weather website that was in a table. I created an empty list which would then be filled with the data from the table, by looping through each row and column. Once I had the list of rows, and the list of column names, using the Pandas library, I formed a dataframe. 
+I used Splinter and Beauiful Soup libraries in Jupyter Notebook to scrape and extract weather data from the Mars Weather website that was in a table.As done in Part 1 above, in order to identify the data to extract, I opened the website in my Chrome web brower, then selected the 'Developer Tools' (Ctrl+Shift+I). Upon inspecting the html code, I was able to identify the section of code corresponding to the data in the table on the page. I created an empty list which would then be filled with the data from the table, by looping through each row and column. Once I had the list of rows, and the list of column names, using the Pandas library, I formed a dataframe. 
 
-Before I performed any analysis, I converted the datatypes of each column eg. from Object to integer or float, depending on the column data. I was then able to perform various types of analysis on the data using Pandas and Matplotlib libraries. Finally, I exported the dataframe to a csv file in an
+Before I performed any analysis, I converted the datatypes of each column eg. from Object to integer or float, depending on the column data. I was then able to perform various types of analysis on the data using Pandas and Matplotlib libraries. Finally, I exported the dataframe to a csv file in an 'Output' folder and closed the browser.
 
 Tools/Libraries I Imported:
 - splinter library: used for automating web browser actions
@@ -57,25 +57,7 @@ Tools/Libraries I Imported:
 
 My Files:
     - Jupyter Notebook Python Script: part_2_mars_weather_kt.ipynb
-    - csv file: Output/mars_temperature_data.csv
-
-- Purpose:
-    1. Visit the Mars Weather Site
-    2. Scrape weather data from the main table on the webpage
-    3. Create a pandas dataframe from the data
-    4. Convert the datatypes of each column for analysis
-    5. Analyze the following:
-        - How many months are there on Mars?
-        - How many Martian days' worth of data are there?
-        - What is the average low temperature by month?
-        - Plot the average temperature by month
-        - Identify the coldest and hottest months in Curiosity's location
-        - Average pressure by Martian month?
-        - Plot the average pressure by month
-        - How many terrestrial (earth) days are there in a Martian year?
-    6. Export the data to a CSV file
-    7. Close the browser 
-        
+    - csv file: Output/mars_temperature_data.csv       
 
 ## Getting Started
 To open the files part_1_mars_news_kt.ipynb and part_2_mars_weather_kt.ipynb in Juypter Notebook:
@@ -87,7 +69,7 @@ To open the files part_1_mars_news_kt.ipynb and part_2_mars_weather_kt.ipynb in 
 ## Installing
 Need to install the following:
   - Chromedriver (windows x64)
-  - Selenium=Beautiful Soup and splinter = automates web browser: pip install "splinter[selenium4]"
+  - Selenium = Beautiful Soup and splinter = automates web browser: pip install "splinter[selenium4]"
   - Beautiful Soup = pip install bs4
   - to parse websites = pip install html5lib
   - to parse websites = pip install lxml
