@@ -65,7 +65,7 @@ To open the files part_1_mars_news_kt.ipynb and part_2_mars_weather_kt.ipynb in 
   - Open Jupyter Notebook, type 'Jupyter Notebook'
         
 ## Installing
-I installed the following:
+Installed the following:
   - Chromedriver (windows x64) (go to: https://googlechromelabs.github.io/chrome-for-testing/#stable, select a stable version of Chromedriver that is suitable for your pc. Unzip the files and make sure that the folder path containing the files is added to Environment Variables > Path on your pc.)
 
 Open 'Anaconda Prompt', activate dev environment (see Getting Started section above), then install the following:
